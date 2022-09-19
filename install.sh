@@ -66,5 +66,6 @@ fc-cache -vf
 echo 'GRUB_DISABLE_OS_PROBER=false' >> /etc/default/grub
 curl 'https://liquorix.net/add-liquorix-repo.sh' | sudo bash
 
+sudo usermod -aG sudo $USER
 nala upgrade -y
 
