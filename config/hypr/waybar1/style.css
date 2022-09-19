@@ -1,0 +1,137 @@
+/* COLORS */
+
+/* Nord */
+@define-color bg #FFFFFF;
+/*@define-color bg #2E3440;*/
+@define-color light #D8DEE9;
+/*@define-color dark @nord_dark_font;*/
+@define-color warning #ebcb8b;
+@define-color critical #BF616A;
+@define-color mode #434C5E;
+/*@define-color workspaces @bg;*/
+/*@define-color workspaces @nord_dark_font;*/
+/*@define-color workspacesfocused #434C5E;*/
+@define-color workspacesfocused #4C566A;
+@define-color tray @workspacesfocused;
+@define-color sound #EBCB8B;
+@define-color network #5D7096;
+@define-color memory #546484;
+@define-color cpu #546484;
+@define-color temp #4D5C78;
+@define-color layout #5e81ac;
+@define-color battery #88c0d0;
+@define-color date #434C5E;
+@define-color time #434C5E;
+@define-color backlight #434C5E;
+@define-color nord_bg #434C5E;
+@define-color nord_bg_blue #546484;
+@define-color nord_light #D8DEE9;
+@define-color nord_light_font #D8DEE9;
+@define-color nord_dark_font #434C5E;
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "Cantarell", "Font Awesome 5 Pro";
+    border: none;
+    border-radius: 3px;
+    min-height: 0;
+    margin: 1px 2px;
+}
+
+#waybar {
+    background-color: rgba(0, 0, 0, 0);
+    color: #434C5E;
+    transition-property: background-color;
+    transition-duration: .5s;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: "Cantarell", "Font Awesome 5 Pro";
+}
+
+/* Module */
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray,
+#mpd {
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    color: #434C5E;
+}
+
+/* Each module that should blink */
+#memory {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Each critical module */
+#memory.critical,
+#cpu.critical {
+    color: @critical;
+}
+
+/* Each critical that should blink */
+#memory.critical {
+    animation-name: blink-critical;
+    animation-duration: 2s;
+}
+
+/* Each warning */
+#network.disconnected,
+#memory.warning,
+#cpu.warning {
+    background: @warning;
+    color: @nord_dark_font;
+}
+
+#network {
+    background: #D8DEE9;
+}
+
+#memory {
+    background: #D8DEE9;
+}
+
+#mpd {
+    background: #D8DEE9;
+}
+
+#cpu {
+    background: #D8DEE9;
+}
+#cpu.critical {
+    color: @nord_dark_font;
+}
+
+#clock {
+    background: #D8DEE9;
+}
+#clock.date {
+    background: #D8DEE9;
+}
+
+#clock.time {
+    background: #D8DEE9;
+}
+
+#pulseaudio { /* Unsused but kept for those who needs it */
+    background: #D8DEE9;
+}
+
+#pulseaudio.muted {
+    background: #D8DEE9;
+    color: #BF616A;
+    /* No styles */
+}
+#pulseaudio.source-muted {
+    background: #D8DEE9;
+    color:  #434C5E;
+    /* No styles */
+}
+#tray {
+    background: #434C5E;
+}

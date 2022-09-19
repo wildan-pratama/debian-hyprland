@@ -1,0 +1,83 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "height": 22, // Waybar height (to be removed for auto height)
+    
+    // Choose the order of the modules
+    "modules-left": ["clock", "cpu", "memory"],
+    "modules-center": [],
+    "modules-right": ["mpd", "pulseaudio", "tray"],
+    
+    // Modules configuration
+    "mpd": {
+        "format": "{title} - {artist}",
+        "format-disconnected": "Disconnected",
+        "on-click": "~/.config/sway/rofi/bin/mpd",
+        "max-length": 25,
+    },
+    
+    "tray": {
+        //"icon-size": 11,
+        "spacing": 5
+    },
+    
+    "clock": {
+        "format": "  {:%H:%M   %e %b}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "today-format": "<b>{}</b>",
+        "on-click": "gnome-calendar"
+    },
+    
+    "cpu": {
+        "interval": "1",      
+        "format": "{max_frequency}GHz <span color=\"darkgray\">| {usage}%</span>",
+        "max-length": 10,
+        "min-length": 10,
+        "on-click": "kitty -e btop",
+        "tooltip": false
+    },
+    
+    "memory": {
+		"on-click": "kitty -e btop",
+	},
+	
+    "network": {
+        // "interface": "wlan0", // (Optional) To force the use of this interface,
+        "format-wifi": "  {essid}",
+        // "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+        "format-ethernet": "{ifname} ",
+        // "format-linked": "{ifname} (No IP) ",
+        "format-linked": "{ifname} ",
+        "format-disconnected": "",
+        // "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "format-alt": "{ifname}",
+        "family": "ipv4",
+        "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\n {bandwidthUpBits}  {bandwidthDownBits}",
+        "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n⬆️ {bandwidthUpBits} ⬇️ {bandwidthDownBits}",
+        "on-click": "~/.config/sway/rofi/bin/network_menu"
+    },
+    
+    "pulseaudio": {
+        "scroll-step": 3, // %, can be a float
+        "format": "{icon} {volume}% {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        //"format-source": "{volume}% ",
+        //"format-source-muted": "",
+        "format-source": "",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol",
+        "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+    }
+}
+
