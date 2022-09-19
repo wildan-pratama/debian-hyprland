@@ -6,8 +6,7 @@ cp sources.list /etc/apt/sources.list
 
 # Copy Fonts and Background
 rm -rf /usr/share/{fonts,backgrounds}
-cp -aR dotfiles/backgrounds /usr/share
-cp -aR dotfiles/fonts /usr/share
+cp -aR config/fonts /usr/share
 
 # Install sudo and required package
 apt update
