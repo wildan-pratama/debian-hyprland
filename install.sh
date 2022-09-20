@@ -5,7 +5,7 @@ cp /etc/apt/sources.list /etc/apt/sources.list.bak
 cp sources.list /etc/apt/sources.list 
 
 # Copy Fonts and Background
-rm -rf /usr/share/{fonts,backgrounds}
+rm -rf /usr/share/fonts
 cp -aR config/fonts /usr/share
 
 # Install sudo and required package
