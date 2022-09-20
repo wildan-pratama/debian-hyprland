@@ -36,7 +36,6 @@ ninja
 ninja install
 cd ..
 cd ..
-rm -rf Git
 
 # Add aditional repo
 # Add Brave repo
