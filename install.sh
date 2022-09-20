@@ -13,7 +13,7 @@ apt update
 apt install nala -y
 nala upgrade -y
 nala install sudo wget curl zsh apt-transport-https software-properties-common gpg lsb-release ca-certificates -y
-nala install git build-essential meson ninja-build cmake pkg-config wayland-protocols libwayland-dev libdrm-dev libxkbcommon-dev libudev-dev libseat-dev xwayland libcairo-dev libpango1.0-dev libpangocairo-1.0-0 libegl-dev libinput-dev libxcb-xkb-dev libgles-dev xdg-desktop-portal-wlr libwlroots-dev libglib2.0-dev libxfce4ui-2-dev libpolkit-agent-1-dev -y
+nala install git build-essential seatd meson ninja-build cmake pkg-config wayland-protocols libwayland-dev libdrm-dev libxkbcommon-dev libudev-dev libseat-dev xwayland libcairo-dev libpango1.0-dev libpangocairo-1.0-0 libegl-dev libinput-dev libxcb-xkb-dev libgles-dev xdg-desktop-portal-wlr libwlroots-dev libglib2.0-dev libxfce4ui-2-dev libpolkit-agent-1-dev -y
 
 # Install Hyprland
 mkdir Git
