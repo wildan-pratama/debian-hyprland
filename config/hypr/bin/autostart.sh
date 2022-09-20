@@ -19,21 +19,10 @@ xsetroot -cursor_name left_ptr
 /usr/libexec/xfce-polkit &
 
 # Set wallpaper
-swaybg -i ~/Pictures/backgrounds/bganime.png &
+swaybg -i ~/Pictures/backgrounds/anime-eye-nord.png &
 
 # Luanch Waybar
 waybar -c ~/.config/hypr/waybar1/config -s ~/.config/hypr/waybar1/style.css &
 
 # Lauch notification daemon
 dunst -config ~/.config/hypr/bin/dunstrc
-
-# Start mpd
-#mpd
-
-# Set theme
-gsettings set $gnome-schema cursor-theme "Layan-border Cursors"
-gsettings set $gnome-schema font-name "JetBrains Mono Medium 10"
-
-# Start autotiling
-#autotiling
-

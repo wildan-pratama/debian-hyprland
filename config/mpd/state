@@ -1,9 +1,9 @@
 sw_volume: 100
 audio_device_state:1:Pulse Audio
 audio_device_state:1:my_fifo
-state: pause
-current: 41
-time: 11.907000
+state: play
+current: 193
+time: 120.258000
 random: 1
 repeat: 1
 single: 0
@@ -401,112 +401,133 @@ song_end
 287:6 Smash Out!!.mp3
 288:07. âBoomâ.mp3
 289:7 âBoomâ.mp3
-290:[Wambatch] Hajimete Kimi to Shabetta.mp3
-291:-ACHanime- rionos - Hashitairo.mp3
-292:01. Introduction ~Where idiot should go~.mp3
-293:02. Ending Story.mp3
-294:03. ONION!.mp3
-295:04. The Beginning.mp3
-296:05. Clock Strikes.mp3
-297:06. Be the light.mp3
-298:07. Nothing Helps.mp3
-299:08. Juvenile.mp3
-300:09. All Mine.mp3
-301:10. Smiling Down.mp3
-302:11. Deeper Deeper.mp3
-303:12. 69.mp3
-304:13. the same as....mp3
-305:OP #20 -  Kara no Kokoro.mp3
-306:OP #17 -  Kaze.mp3
-307:01. monologue.mp3
-308:02. Kyogen NEUROSE.mp3
-309:03. Black Rail.mp3
-310:04 ROOM.mp3
-311:05. Drive me.mp3
-312:06. If I Am....mp3
-313:07. Monochrome effector.mp3
-314:08. Zero Gravity.mp3
-315:09. FAKE.mp3
-316:10. Someday.mp3
-317:11 CHiLD -error-.mp3
-318:OP #18 -  LINE.mp3
-319:01. Mighty Long Fall.mp3
-320:02. Decision.mp3
-321:03. Pieces of Me.mp3
-322:01 Missing You.mp3
-323:01. Institution.mp3
-324:02. Bullet Radio.mp3
-325:03. Second Limit.mp3
-326:04. Warning.mp3
-327:05. Awake.mp3
-328:06. Still.mp3
-329:07. Calling You.mp3
-330:08. Take It Back!!.mp3
-331:-ACHanime- nano - MY LIBERATION.mp3
-332:[Wambatch] Wind.mp3
-333:[Wambatch] Speed.mp3
-334:[Wambatch] Soba ni Iru Kara.mp3
-335:[Wambatch] Parade.mp3
-336:[Wambatch] Yellow Moon.mp3
-337:[Wambatch] Pinocchio.mp3
-338:[Wambatch] Scenario.mp3
-339:[Wambatch] Harmonia.mp3
-340:[Wambatch] Viva Rock ~japanese side~.mp3
-341:[Wambatch] ALIVE.mp3
-342:[Wambatch] Imamade Nandomo.mp3
-343:[Wambatch] Ryuusei.mp3
-344:[Wambatch] Mountain a Go Go Two.mp3
-345:[Wambatch] Nakushita Kotoba.mp3
-346:[Wambatch] R O C K S.mp3
-347:[Wambatch] Haruka Kanata.mp3
-348:[Wambatch] Kanashimi wo Yasashisa Ni.mp3
-349:[Wambatch] GO!!!.mp3
-350:[Wambatch] Seishun Kyousoukyoku.mp3
-351:[Wambatch] NO BOY NO CRY.mp3
-352:[Wambatch] Namikaze Satellite.mp3
-353:[Wambatch] Remember.mp3
-354:[Wambatch] Yurayura.mp3
-355:OP #10 -  Newsong_ by tactica.mp3
-356:Cartoon - On & On (feat. Daniel Levi) [NCS Release].mp3
-357:Culture Code - Make Me Move (feat. Karra) [NCS Release].mp3
-358:Janji - Heroes Tonight (feat. Johnning) [NCS Release].mp3
-359:N3WPORT - Power (feat. braev) [NCS Release].mp3
-360:-ACHanime- -Î±Alfakyun. - Our Sympathy.mp3
-361:01. Saishukai STORY.mp3
-362:02. EXPERIENCE.mp3
-363:03. Flower -0714-.mp3
-364:02. Our Story.mp3
-365:02. START OVERÂ¡]feat. MY FIRST STOR.mp3
-366:04. Our Story (Instrumental).mp3
-367:04. START OVER (Instrumental).mp3
-368:Scenarioart - Sayonara Moon Town.mp3
-369:CHiCO with HoneyWorks - Sekaiwa Koi Ni Ochiteiru.mp3
-370:01. Skyfall.mp3
-371:02. Right by your side.mp3
-372:03. Manhattan Beach.mp3
-373:01. Preservation.mp3
-374:02. The Reason.mp3
-375:03. The Story Is My Life.mp3
-376:04. Gift.mp3
-377:05. Lose your mind.mp3
-378:06. Silence word.mp3
-379:07. Where come from...mp3
-380:08. Deserve!!.mp3
-381:01. The Way Back (Japanese Ver.).mp3
-382:-OSTnime- Suzuki Konomi - This Game.mp3
-383:FUNKIST - Ft.mp3
-384:-ACHanime- Ito Kanako - Uncontrollable.mp3
-385:01. We're Just Waiting 4 You.mp3
-386:02. Take My Hand.mp3
-387:metrolagu.online - Jim Croce - Time in a bottle - 1973.mp3
-388:-ACHanime-_After_the_Rain_-_Anti_Clockwise.mp3
-389:-ACHanime- Ð¯eaL - Kagerou.mp3
-390:01. ãããããâã©ãï½ã¿ã.mp3
-391:02. ãã¹ãã¬ããªã¥ã¼ã·ã§ã³ãâ.mp3
-392:03. ãããããâã©ãï½ã¿ã -Instrumental-.mp3
-393:04. ãã¹ãã¬ããªã¥ã¼ã·ã§ã³ãâ -Instrumental-.mp3
-394:05. ãã©ãã«çºçï¼ï¼åãã¦ã®ååç·´ç¿.mp3
-395:-ACHanime- Luck Life - Refrain.mp3
-396:-ACHanime-_After_the_Rain_-_Kaidoku_Funou.mp3
-397:-ACHanime- Civilian - Akairo.mp3
+290:08.  Last Call.mp3
+291:8 Last Call.mp3
+292:09. Kimi no uta.mp3
+293:9 åã®å.mp3
+294:10 Missing You.mp3
+295:10. Missing You.mp3
+296:11 The Puzzle.mp3
+297:11. The Puzzle.mp3
+298:12 Tomorrowland.mp3
+299:12. Tomorrowland.mp3
+300:13 Home.mp3
+301:13. Home.mp3
+302:14 ä¸å¯éãªãã¬ã¤ã¹.mp3
+303:14. Fukagyaku Reprise.mp3
+304:OP #19 -  Blood Circulator.mp3
+305:-ACHanime- ZAQ - Braver.mp3
+306:OP #02 -  distance.mp3
+307:OP #08 -  Diver.mp3
+308:01. Fukagyaku Replace.mp3
+309:02. We Are Never Ever Getting Back Together (Cover).mp3
+310:NEFFEX - Grateful [Copyright Free].mp3
+311:[Wambatch] Hajimete Kimi to Shabetta.mp3
+312:-ACHanime- rionos - Hashitairo.mp3
+313:01. Introduction ~Where idiot should go~.mp3
+314:02. Ending Story.mp3
+315:03. ONION!.mp3
+316:04. The Beginning.mp3
+317:05. Clock Strikes.mp3
+318:06. Be the light.mp3
+319:07. Nothing Helps.mp3
+320:08. Juvenile.mp3
+321:09. All Mine.mp3
+322:10. Smiling Down.mp3
+323:11. Deeper Deeper.mp3
+324:12. 69.mp3
+325:13. the same as....mp3
+326:OP #20 -  Kara no Kokoro.mp3
+327:OP #17 -  Kaze.mp3
+328:01. monologue.mp3
+329:02. Kyogen NEUROSE.mp3
+330:03. Black Rail.mp3
+331:04 ROOM.mp3
+332:05. Drive me.mp3
+333:06. If I Am....mp3
+334:07. Monochrome effector.mp3
+335:08. Zero Gravity.mp3
+336:09. FAKE.mp3
+337:10. Someday.mp3
+338:11 CHiLD -error-.mp3
+339:OP #18 -  LINE.mp3
+340:01. Mighty Long Fall.mp3
+341:02. Decision.mp3
+342:03. Pieces of Me.mp3
+343:01 Missing You.mp3
+344:01. Institution.mp3
+345:02. Bullet Radio.mp3
+346:03. Second Limit.mp3
+347:04. Warning.mp3
+348:05. Awake.mp3
+349:06. Still.mp3
+350:07. Calling You.mp3
+351:08. Take It Back!!.mp3
+352:-ACHanime- nano - MY LIBERATION.mp3
+353:[Wambatch] Wind.mp3
+354:[Wambatch] Speed.mp3
+355:[Wambatch] Soba ni Iru Kara.mp3
+356:[Wambatch] Parade.mp3
+357:[Wambatch] Yellow Moon.mp3
+358:[Wambatch] Pinocchio.mp3
+359:[Wambatch] Scenario.mp3
+360:[Wambatch] Harmonia.mp3
+361:[Wambatch] Viva Rock ~japanese side~.mp3
+362:[Wambatch] ALIVE.mp3
+363:[Wambatch] Imamade Nandomo.mp3
+364:[Wambatch] Ryuusei.mp3
+365:[Wambatch] Mountain a Go Go Two.mp3
+366:[Wambatch] Nakushita Kotoba.mp3
+367:[Wambatch] R O C K S.mp3
+368:[Wambatch] Haruka Kanata.mp3
+369:[Wambatch] Kanashimi wo Yasashisa Ni.mp3
+370:[Wambatch] GO!!!.mp3
+371:[Wambatch] Seishun Kyousoukyoku.mp3
+372:[Wambatch] NO BOY NO CRY.mp3
+373:[Wambatch] Namikaze Satellite.mp3
+374:[Wambatch] Remember.mp3
+375:[Wambatch] Yurayura.mp3
+376:OP #10 -  Newsong_ by tactica.mp3
+377:Cartoon - On & On (feat. Daniel Levi) [NCS Release].mp3
+378:Culture Code - Make Me Move (feat. Karra) [NCS Release].mp3
+379:Janji - Heroes Tonight (feat. Johnning) [NCS Release].mp3
+380:N3WPORT - Power (feat. braev) [NCS Release].mp3
+381:-ACHanime- -Î±Alfakyun. - Our Sympathy.mp3
+382:01. Saishukai STORY.mp3
+383:02. EXPERIENCE.mp3
+384:03. Flower -0714-.mp3
+385:02. Our Story.mp3
+386:02. START OVERÂ¡]feat. MY FIRST STOR.mp3
+387:04. Our Story (Instrumental).mp3
+388:04. START OVER (Instrumental).mp3
+389:Scenarioart - Sayonara Moon Town.mp3
+390:CHiCO with HoneyWorks - Sekaiwa Koi Ni Ochiteiru.mp3
+391:01. Skyfall.mp3
+392:02. Right by your side.mp3
+393:03. Manhattan Beach.mp3
+394:01. Preservation.mp3
+395:02. The Reason.mp3
+396:03. The Story Is My Life.mp3
+397:04. Gift.mp3
+398:05. Lose your mind.mp3
+399:06. Silence word.mp3
+400:07. Where come from...mp3
+401:08. Deserve!!.mp3
+402:01. The Way Back (Japanese Ver.).mp3
+403:-OSTnime- Suzuki Konomi - This Game.mp3
+404:FUNKIST - Ft.mp3
+405:-ACHanime- Ito Kanako - Uncontrollable.mp3
+406:01. We're Just Waiting 4 You.mp3
+407:02. Take My Hand.mp3
+408:metrolagu.online - Jim Croce - Time in a bottle - 1973.mp3
+409:-ACHanime-_After_the_Rain_-_Anti_Clockwise.mp3
+410:-ACHanime- Ð¯eaL - Kagerou.mp3
+411:01. ãããããâã©ãï½ã¿ã.mp3
+412:02. ãã¹ãã¬ããªã¥ã¼ã·ã§ã³ãâ.mp3
+413:03. ãããããâã©ãï½ã¿ã -Instrumental-.mp3
+414:04. ãã¹ãã¬ããªã¥ã¼ã·ã§ã³ãâ -Instrumental-.mp3
+415:05. ãã©ãã«çºçï¼ï¼åãã¦ã®ååç·´ç¿.mp3
+416:-ACHanime- Luck Life - Refrain.mp3
+417:-ACHanime-_After_the_Rain_-_Kaidoku_Funou.mp3
+418:-ACHanime- Civilian - Akairo.mp3
 playlist_end
