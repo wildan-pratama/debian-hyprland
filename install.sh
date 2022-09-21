@@ -13,10 +13,13 @@ apt update
 apt install nala -y
 nala upgrade -y
 nala install sudo wget curl zsh apt-transport-https software-properties-common gpg lsb-release ca-certificates -y
-nala install btop git build-essential seatd meson ninja-build cmake pkg-config wayland-protocols -y
+nala install btop git build-essential seatd meson ninja-build cmake pkg-config wayland-protocols libgtk-layer-shell-dev -y
 nala install xwayland libcairo-dev wlr-randr libwayland-dev libdrm-dev libxkbcommon-dev libudev-dev libseat-dev -y 
 nala install libpango1.0-dev libpangocairo-1.0-0 libegl-dev libinput-dev libxcb-xkb-dev libgles-dev wireplumber -y
-nala install xdg-desktop-portal-wlr libwlroots-dev libglib2.0-dev libxfce4ui-2-dev libpolkit-agent-1-dev -y
+nala install xdg-desktop-portal-wlr libwlroots-dev libglib2.0-dev libxfce4ui-2-dev libpolkit-agent-1-dev libsndio-dev -y
+nala install clang-tidy gobject-introspection libdbusmenu-gtk3-dev libevdev-dev libfmt-dev libgirepository1.0-dev libgtk-3-dev -y
+nala install libgtkmm-3.0-dev libinput-dev libjsoncpp-dev libmpdclient-dev libnl-3-dev libnl-genl-3-dev libpulse-dev libjack-dev -y 
+nala install libsigc++-2.0-dev libspdlog-dev libwayland-dev scdoc libxkbregistry-dev libupower-glib-dev libgtkmm-3.0-dev -y
 
 # Add aditional repo
 # Add Brave repo
@@ -33,7 +36,7 @@ cp -aR microsoft.gpg /etc/apt/trusted.gpg.d/
 
 #install aditional pacakge
 nala upgrade -y
-nala install waybar sway swaylock swaybg swayidle grim wl-clipboard rofi xwayland dunst xdg-desktop-portal-wlr qtwayland5 libnm-dev network-manager-gnome sddm slurp -y
+nala install sway swaylock swaybg swayidle grim wl-clipboard rofi xwayland dunst xdg-desktop-portal-wlr qtwayland5 libnm-dev network-manager-gnome sddm slurp -y
 nala install nemo libnm-dev network-manager-gnome brave-browser code geany kitty viewnior vlc ranger file-roller nemo-fileroller lxappearance mpd mpc ncmpcpp python3-pip pavucontrol -y
 nala install composer network-manager libnss3-tools jq xsel php8.1-cli php8.1-curl php8.1-mbstring php8.1-mcrypt php8.1-xml php8.1-zip php8.1-sqlite3 php8.1-mysql php8.1-pgsql php8.1-fpm -y
 
@@ -43,6 +46,14 @@ cd Git
 git clone --recursive https://github.com/hyprwm/Hyprland
 cd Hyprland
 sudo make install
+
+#insall Waybar
+git clone https://github.com/Alexays/Waybar
+cd Waybar
+sed -i 's/zext_workspace_handle_v1_activate(workspace_handle_);/const std::string command = "hyprctl dispatch workspace " + name_;\n\tsystem(command.c_str());/g' src/modules/wlr/workspace_manager.cpp
+meson --prefix=/usr --buildtype=plain --auto-features=enabled --wrap-mode=default build
+meson configure -Dexperimental=true build
+sudo ninja -C build install
 
 # Install Xfce polkit
 cd ..
