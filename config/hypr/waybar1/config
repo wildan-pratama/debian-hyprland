@@ -1,14 +1,21 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 22, // Waybar height (to be removed for auto height)
+    "height": 25, // Waybar height (to be removed for auto height)
     
     // Choose the order of the modules
-    "modules-left": ["clock", "cpu", "memory"],
-    "modules-center": [],
+    "modules-left": ["clock", "cpu", "memory", "wlr/workspaces"],
+    //"modules-center": [],
     "modules-right": ["mpd", "pulseaudio", "tray"],
     
     // Modules configuration
+   
+    "wlr/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": true,
+        "on-click": "activate",
+        "format": "{name}"   
+    },
     "mpd": {
         "format": "{title} - {artist}",
         "format-disconnected": "Disconnected",
@@ -56,6 +63,11 @@
         "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n⬆️ {bandwidthUpBits} ⬇️ {bandwidthDownBits}",
         "on-click": "~/.config/sway/rofi/bin/network_menu"
     },
+    
+    "hyprland/window": {
+		"format": "👉 {title}",
+		"max-length": 25,
+	},
     
     "pulseaudio": {
         "scroll-step": 3, // %, can be a float

@@ -55,7 +55,9 @@
 #network,
 #pulseaudio,
 #tray,
-#mpd {
+#mpd,
+#window,
+#workspaces {
     padding-left: 0.6em;
     padding-right: 0.6em;
     color: #434C5E;
@@ -86,6 +88,21 @@
 #cpu.warning {
     background: @warning;
     color: @nord_dark_font;
+}
+#workspaces {
+   background: #D8DEE9;
+}
+#workspaces button {
+    font-weight: bold; /* Somewhy the bar-wide setting is ignored*/
+    padding: 0;
+    /*color: #999;*/
+    color: #434C5E;
+    font-size: 0.9em;
+}
+#workspaces button.focused {
+    background: #434C5E;
+    color: #ffffff;
+    padding: 0 0.1em;
 }
 
 #network {
@@ -134,4 +151,7 @@
 }
 #tray {
     background: #434C5E;
+}
+#window {
+    background: #D8DEE9;
 }
