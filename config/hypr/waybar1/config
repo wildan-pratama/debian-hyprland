@@ -20,7 +20,7 @@
         "format": "{title} - {artist}",
         "format-disconnected": "Disconnected",
         "on-click": "~/.config/sway/rofi/bin/mpd",
-        "max-length": 25,
+        "max-length": 30,
     },
     
     "tray": {
@@ -38,7 +38,7 @@
     "cpu": {
         "interval": "1",      
         "format": "{max_frequency}GHz <span color=\"darkgray\">| {usage}%</span>",
-        "max-length": 10,
+        "max-length": 15,
         "min-length": 10,
         "on-click": "kitty -e btop",
         "tooltip": false
