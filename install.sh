@@ -8,9 +8,20 @@ cp sources.list /etc/apt/sources.list
 rm -rf /usr/share/fonts
 cp -aR fonts /usr/share
 
-# Install sudo and required package
+
 apt update
-apt install nala -y
+apt install nala git -y
+
+mkdir Git
+cd Git
+git clone --recursive https://github.com/hyprwm/Hyprland
+
+git clone https://github.com/Alexays/Waybar
+
+git clone https://github.com/ncopa/xfce-polkit.git
+cd ..
+
+# Install sudo and required package
 nala upgrade -y
 nala install sudo wget curl zsh apt-transport-https software-properties-common gpg lsb-release ca-certificates -y
 nala install btop git build-essential seatd meson ninja-build cmake pkg-config wayland-protocols libgtk-layer-shell-dev -y
@@ -36,28 +47,24 @@ cp -aR microsoft.gpg /etc/apt/trusted.gpg.d/
 
 #install aditional pacakge
 nala upgrade -y
-nala install sway swaylock swaybg swayidle grim wl-clipboard rofi xwayland dunst xdg-desktop-portal-wlr qtwayland5 libnm-dev network-manager-gnome sddm slurp -y
+nala install sway swaylock swaybg swayidle grim wl-clipboard rofi xwayland dunst xdg-desktop-portal-wlr qtwayland5 libnm-dev network-manager-gnome slurp -y
 nala install nemo libnm-dev network-manager-gnome brave-browser code geany kitty viewnior vlc ranger file-roller nemo-fileroller lxappearance mpd mpc ncmpcpp python3-pip pavucontrol -y
 nala install composer network-manager libnss3-tools jq xsel php8.1-cli php8.1-curl php8.1-mbstring php8.1-mcrypt php8.1-xml php8.1-zip php8.1-sqlite3 php8.1-mysql php8.1-pgsql php8.1-fpm -y
 
 # Install Hyprland
-mkdir Git
-cd Git
-git clone --recursive https://github.com/hyprwm/Hyprland
-cd Hyprland
+cd Git/Hyprland
 sudo make install
+cd ..
 
 #insall Waybar
-git clone https://github.com/Alexays/Waybar
 cd Waybar
 sed -i 's/zext_workspace_handle_v1_activate(workspace_handle_);/const std::string command = "hyprctl dispatch workspace " + name_;\n\tsystem(command.c_str());/g' src/modules/wlr/workspace_manager.cpp
 meson --prefix=/usr --buildtype=plain --auto-features=enabled --wrap-mode=default build
 meson configure -Dexperimental=true build
 sudo ninja -C build install
+cd ..
 
 # Install Xfce polkit
-cd ..
-git clone https://github.com/ncopa/xfce-polkit.git
 cd xfce-polkit
 mkdir build
 cd build
@@ -81,7 +88,7 @@ curl 'https://liquorix.net/add-liquorix-repo.sh' | sudo bash
 
 
 # Purge some package
-nala purge foot tilix sway -y
+nala purge foot tilix -y
 sudo usermod -aG sudo $USER
 nala upgrade -y
 
