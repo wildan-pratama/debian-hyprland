@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+
+## Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
+## Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
+
+DIR="$HOME/.config/hypr"
+
+rofi_command="rofi -theme $DIR/rofi/themes/screenrecord.rasi"
+
+# Apps
+all=" Record All Screen"
+one=" Record Specific Screen"
+allaudio=" Record All Screen (with audio)"
+oneaudio=" Record Specific Screen (With audio)"
+stop=" Stop Record"
+
+# Variable passed to rofi
+options="$all\n$one\n$allaudio\n$oneaudio"
+
+# countdown
+countdown () {
+	for sec in `seq $1 -1 1`; do
+		dunstify -t 1000 --replace=699 "Recording in : $sec"
+		sleep 1
+	done
+}
+
+# Functions
+
+chosen="$(echo -e "$options" | $rofi_command -p "Screen Record" -dmenu -selected-row 0)"
+case $chosen in
+    $all)
+		countdown '5'
+        kitty -e wf-recorder -f ~/Videos/Screenrecorder/$(date +'%s_wf-record.mp4')
+        ;;
+    $one)
+		countdown '5'
+        kitty -e wf-recorder -f ~/Videos/Screenrecorder/$(date +'%s_wf-record.mp4') -g "$(slurp)"
+        ;;
+    $allaudio)
+		countdown '5'
+        kitty -e wf-recorder -a -f ~/Videos/Screenrecorder/$(date +'%s_wf-record.mp4')
+        ;;
+    $oneaudio)
+		countdown '5'
+        kitty -e wf-recorder -a -f ~/Videos/Screenrecorder/$(date +'%s_wf-record.mp4') -g "$(slurp)"
+        ;;
+    $stop)
+        "$DIR"/bin/asroot.sh "$term -e vim"
+        ;;
+esac
+
+

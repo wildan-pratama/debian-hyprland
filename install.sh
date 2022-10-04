@@ -23,7 +23,7 @@ cd ..
 
 # Install sudo and required package
 nala upgrade -y
-nala install sudo wget curl zsh apt-transport-https software-properties-common gpg lsb-release ca-certificates -y
+nala install sudo wget curl aria2 zsh apt-transport-https software-properties-common gpg lsb-release ca-certificates -y
 nala install btop git build-essential seatd meson ninja-build cmake pkg-config wayland-protocols libgtk-layer-shell-dev -y
 nala install xwayland libcairo-dev wlr-randr libwayland-dev libdrm-dev libxkbcommon-dev libudev-dev libseat-dev -y 
 nala install libpango1.0-dev libpangocairo-1.0-0 libegl-dev libinput-dev libxcb-xkb-dev libgles-dev wireplumber -y
@@ -47,10 +47,10 @@ cp -aR microsoft.gpg /etc/apt/trusted.gpg.d/
 
 #install aditional pacakge
 nala upgrade -y
-nala install sway swaylock swaybg swayidle grim wl-clipboard rofi xwayland dunst xdg-desktop-portal-wlr qtwayland5 libnm-dev network-manager-gnome slurp -y
-nala install nemo libnm-dev network-manager-gnome brave-browser code geany kitty viewnior vlc ranger file-roller nemo-fileroller lxappearance mpd mpc ncmpcpp python3-pip pavucontrol -y
+nala install wlogout swaylock swaybg swayidle grim wl-clipboard rofi xwayland dunst xdg-desktop-portal-wlr qtwayland5 libnm-dev network-manager-gnome sddm slurp -y
+nala install nemo libnm-dev network-manager-gnome brave-browser code geany kitty viewnior vlc ranger file-roller nemo-fileroller lxappearance -y
 nala install composer network-manager libnss3-tools jq xsel php8.1-cli php8.1-curl php8.1-mbstring php8.1-mcrypt php8.1-xml php8.1-zip php8.1-sqlite3 php8.1-mysql php8.1-pgsql php8.1-fpm -y
-
+nala install mpd mpc ncmpcpp python3-pip pavucontrol wf-recorder -y
 # Install Hyprland
 cd Git/Hyprland
 sudo make install
@@ -83,12 +83,13 @@ nala install fonts-noto-color-emoji -y
 fc-cache -vf
 
 # Install Liquorix kernel
-echo 'GRUB_DISABLE_OS_PROBER=false' >> /etc/default/grub
-curl 'https://liquorix.net/add-liquorix-repo.sh' | sudo bash
+#echo 'GRUB_DISABLE_OS_PROBER=false' >> /etc/default/grub
+#curl 'https://liquorix.net/add-liquorix-repo.sh' | sudo bash
 
 
 # Purge some package
-nala purge foot tilix -y
+nala purge foot tilix zutty -y
 sudo usermod -aG sudo $USER
 nala upgrade -y
+sudo mkdir /usr/share/desktop-directories/
 
