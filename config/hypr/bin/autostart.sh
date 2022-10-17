@@ -23,7 +23,7 @@ waybar -c ~/.config/hypr/waybar/config -s ~/.config/hypr/waybar/style.css &
 dunst -config ~/.config/hypr/bin/dunstrc &
 
 ## Set wallpaper
-swaybg -i ~/Pictures/backgrounds/anime-eye-nord.png &
+swaybg -i ~/Pictures/backgrounds/bganime-hd.png &
 
 ## Launch Network applet
 nm-applet --indicator &

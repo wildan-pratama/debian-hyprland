@@ -88,8 +88,8 @@ fc-cache -vf
 
 
 # Purge some package
-nala purge foot tilix zutty -y
+nala purge foot tilix zutty kde* -y
 sudo usermod -aG sudo $USER
 nala upgrade -y
-sudo mkdir -p /usr/share/desktop-directories/
+sudo mkdir /usr/share/desktop-directories/
 

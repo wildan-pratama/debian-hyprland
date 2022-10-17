@@ -33,9 +33,9 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: "Cantarell", "Font Awesome 5 Pro";
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     min-height: 0;
-    margin: 1px 2px;
+    margin: 1px 3px;
 }
 
 #waybar {
@@ -103,6 +103,11 @@
     background: #434C5E;
     color: #ffffff;
     padding: 0 0.1em;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+    /*box-shadow: inset 0 -3px #ffffff;*/
 }
 
 #network {

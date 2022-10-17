@@ -37,8 +37,7 @@ prompt {
     spacing: 						0;
     border: 						0;
     border-radius: 					100%;
-    background-color:             	@highlight;
-    text-color: 					@background;
+    text-color: 					@selected;
     padding:    					6px 14px 6px 10px;
 }
 
@@ -70,9 +69,9 @@ case-indicator {
 inputbar {
     spacing:    					0px;
     text-color: 					@foreground;
-    border: 						0px;
+    border: 						2px;
     border-color: 					@selected;
-    border-radius: 					0px;
+    border-radius: 					100%;
     children: 						[ prompt,textbox-prompt-colon,entry ];
 }
 
@@ -119,7 +118,7 @@ element selected.normal {
     background-color: 				@selected;
     text-color:       				@background;
     border: 						0px;
-    border-radius: 						10px;
+    border-radius: 					10px;
     border-color: 					@selected;
 }
 element selected.urgent {
@@ -154,15 +153,15 @@ button {
     horizontal-align:               0.5;
     vertical-align:                 0.5;
     padding: 						7px;
-    
-    text-color: 					@highlight;
-    border: 						0px;
+    background-color:				@background;
+    text-color: 					@selected;
+    border: 						2px;
     border-radius: 					100%;
     border-color: 					@selected;
 }
 
 button selected {
-    background-color:             	@on;
+    background-color:             	@selected;
     text-color: 					@background;
     border: 						0px;
     border-radius: 					100%;
